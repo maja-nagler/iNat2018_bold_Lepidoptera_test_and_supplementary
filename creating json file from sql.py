@@ -289,7 +289,7 @@ for i in range(0, len(data_table)):
     folder_path = save_folder = "images/" + data_table[i]['label']
     filename = data_table[i]['basename'] + '.jpg'
     filepath = os.path.join(folder_path, filename)
-    if not (os.path.exists(filepath)): #jeżeli nie ma #moduł syst operacyjnego
+    if not (os.path.exists(filepath)): #If there's no operating system #module
         continue
     img = Image.open(filepath)
     width, height = img.size
